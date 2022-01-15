@@ -25,13 +25,6 @@ const assignValue = () => {
     anInitialFee.value = anInitialFeeRange.value;
     creditTerm.value = creditTermRange.value;    
 }; 
-
-const assignValueInput = () => {
-    totalCostRange.value = totalCost.value;
-    anInitialFeeRange.value = anInitialFee.value;
-    creditTermRange.value = creditTerm.value;    
-}; 
-assignValueInput();
 assignValue();
 
 const banks = [
@@ -77,7 +70,6 @@ const takeActiveBank = currentActive => {
 
 inputsRange.forEach((input) => {
     input.addEventListener('input', () => {
-        assignValueInput();
         assignValue();
         calculation(totalCost.value, anInitialFee.value, creditTerm.value);
     })
