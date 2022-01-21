@@ -132,3 +132,6 @@ const calculation = (totalCost = 0, anInitialFee = 100000, creditTerm = 1) => {
         recommendedIncome.innerHTML = `${monthlyPaymentRound + ((monthlyPaymentRound / 100) * 35)} ₽`;
     }
 }
+
+
+
